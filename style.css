@@ -490,7 +490,6 @@ body {
 }
 
 .brand-img{
-margin-top: 10px;
     display: flex;
   align-items: center;
   justify-content: center;
@@ -523,11 +522,11 @@ margin-top: 10px;
     padding: 30px;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 400px 400px; /* Adjust rows for better structure */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px; /* Adjust rows for better structure */
     grid-template-areas: 
-        "v v g "
-        "v v f ";
+        "v v g g"
+        "v v f f";
         color: white;
 }
 
@@ -544,9 +543,9 @@ margin-top: 10px;
 .vegetable-content{
     display: flex;
     flex-direction: column;
-  gap: 440px;
+  gap: 140px;
     position: absolute;
-    top: 80px;
+    top: 50px;
     left: 30px;
 }
 
@@ -659,11 +658,11 @@ gap: 8px;
         padding: 30px;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 400px 400px; /* Adjust rows for better structure */
+     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px;/* Adjust rows for better structure */
     grid-template-areas: 
-        "child1 child1 child2 "
-        "child1 child1 child3 ";
+        "child1 child1 child2 child2 "
+        "child1 child1 child3 child3";
         color: white;
     
 }
@@ -697,7 +696,7 @@ gap: 8px;
 .child1-content{
      display:flex;
    flex-direction:column;
-   gap: 8em; 
+   gap: 4em; 
        position: absolute;
        left: 30px;
        top: 80px;
@@ -844,6 +843,20 @@ footer .logo{
 .categories h4{
     font-size: 40px;
 }
+
+.category {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "v v g g"
+        "v v f f ";
+}
+
+.category2{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "child1 child1 child2 child2 "
+        "child1 child1 child3  child3";
+}
 .experiences h4{
     font-size: 40px;
 }
@@ -869,7 +882,7 @@ footer .logo{
     }
 
     .welcome-section{
-   background-image: url("assets/bg.jpeg");
+   background-image: url("/assets/bg.jpeg");
 height: 100%;
   
 }
@@ -904,8 +917,14 @@ margin-top: 10px;
      font-size: 50px;
 }
 
-.category{
-    padding: 80px;}
+  .category {
+       padding: 80px;
+  grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 400px 400px;
+    grid-template-areas: 
+        "v v g "
+        "v v f ";
+}
 
     .experiences{
      padding: 80px;
@@ -914,8 +933,15 @@ margin-top: 10px;
      font-size: 50px;
 }
 
+
+
 .category2{
         padding: 80px;
+     grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 400px 400px;
+    grid-template-areas: 
+        "child1 child1 child2 "
+        "child1 child1 child3 ";
 }
 .popular{
         padding: 80px;
